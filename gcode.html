@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    body {padding-top:50px ;  margin-top: auto; margin-left: 30px;text-align: center;}
+
+    </style>
+  </head>
+  <body>
+    <h1>PYTHON CODE</h1>
+    <br>
+
+      <div class="">
+        <button onclick="location.href='index.html'">Go to Home Page</button> <br /><br />
+      </div>
+
+
+
+    <h3> CODE FOR PRINTING GRAPH</h3>
+    <div class="">
+      import matplotlib.pyplot as plt <br>
+      from random import sample <br>
+
+      %matplotlib inline <br>
+
+      ns = range(10, 1000, 10000) <br>
+      ops = []<br>
+      for n in ns: <br>
+          my_list = sample(range(n), n) <br>
+          ops.append(<b>sorting_method</b>(my_list))<br>
+      plt.plot(ns, ops);<br>
+    </div>
+
+<h3>sorting_method USING EXAMPLE BUBBLE SORT</h3>
+def bubble_sort(a):<br>
+    not_sorted = True<br>
+    operations = 0<br>
+    while not_sorted:<br>
+        not_sorted = False<br>
+        for i in range(len(a)-1):<br>
+            operations += 1<br>
+            if a[i] > a[i+1]:<br>
+                a[i], a[i+1] = a[i+1], a[i]<br>
+                not_sorted = True<br>
+    return operations<br>
+
+
+  </body>
+</html>
