@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title></title>
     <style>
-    body {padding-top:50px ;  margin-top: auto; margin-left: 30px;background-color:#0c7b93;color: white;text-align: center;}
-    h1 { color: black;}
-h3 { color: black;}
+    body {padding-top:50px ;  margin-top: auto; margin-left: 30px;background-color:#0c7b93;color: white;}
+    h1 { color: black;text-align: center;}
+    h3 { color: black;}
+    p {text-align: center;}
+    b {color: black;}
     </style>
   </head>
   <body>
@@ -29,23 +31,26 @@ h3 { color: black;}
       ns = range(10, 1000, 10000) <br>
       ops = []<br>
       for n in ns: <br>
-          my_list = sample(range(n), n) <br>
-          ops.append(<b>sorting_method</b>(my_list))<br>
+         &nbsp;&nbsp;&nbsp;&nbsp; my_list = sample(range(n), n) <br>
+         &nbsp;&nbsp;&nbsp;&nbsp; ops.append(<b>sorting_method</b>(my_list))<br>
       plt.plot(ns, ops);<br>
     </div>
 
 <h3>sorting_method USING EXAMPLE BUBBLE SORT</h3>
-def bubble_sort(a):<br>
-    not_sorted = True<br>
-    operations = 0<br>
-    while not_sorted:<br>
-        not_sorted = False<br>
-        for i in range(len(a)-1):<br>
-            operations += 1<br>
-            if a[i] > a[i+1]:<br>
-                a[i], a[i+1] = a[i+1], a[i]<br>
-                not_sorted = True<br>
-    return operations<br>
+<div class="">
+  def bubble_sort(a):<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;  not_sorted = True<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;  operations = 0<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  while not_sorted:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        not_sorted = False<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       for i in range(len(a)-1):<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          operations += 1<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          if a[i] > a[i+1]:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;              a[i], a[i+1] = a[i+1], a[i]<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;              not_sorted = True<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;  return operations<br>
+</div>
+
 
 
   </body>
